@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+     <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="user-profile">
+        <img id="user-avatar" alt="User Avatar" width="100">
+        <h2 id="user-name"></h2>
+        <p id="user-bio"></p>
+        <div class="user-info-item" id="user-location"></div>
+       
+        <div class="user-info-item" id="user-social-links"></div>
+    </div>
+
+    <div>
+        <label for="reposPerPage">Repositories per page:</label>
+        <select id="reposPerPage" onchange="fetchRepositories()">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+
+    <ul id="repo-list"></ul>
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
